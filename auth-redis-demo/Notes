@@ -1,0 +1,12 @@
+Archtype :
+
+mvn io.quarkus:quarkus-maven-plugin:3.8.2:create \
+  -DprojectGroupId=com.example \
+  -DprojectArtifactId=auth-redis-demo \
+  -DclassName="com.example.AuthorizationResource" \
+  -Dpath="/auth" \
+  -Dextensions="resteasy-reactive,redis-client,jackson"
+
+
+Redis quarkus guide : https://quarkus.io/guides/redis
+All qaurkus guide : https://quarkus.io/guides/
